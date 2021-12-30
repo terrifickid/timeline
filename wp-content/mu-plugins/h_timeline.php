@@ -1,5 +1,12 @@
 <?php
-
+/**
+ * Plugin Name: Hauser & Wirth Timeline
+ * Author: msplint
+ * Version: 1.1.1
+ *
+ * @package wpengine/common-mu-plugin
+ */
+require_once(__DIR__ . '/advanced-custom-fields-pro/acf.php');
 if ( ! function_exists('h_timeline') ) {
 
 // Register Custom Post Type
