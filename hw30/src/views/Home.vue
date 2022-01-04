@@ -383,7 +383,7 @@ export default {
   components: {},
   data() {
     return {
-      isModalToggled: false,
+      isModalToggled: true,
     };
   },
   methods: {
