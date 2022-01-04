@@ -72,7 +72,7 @@
               </div>
               <div class="grid grid-cols-5 gap-8 mb-20">
                 <div class="col-span-5 md:col-span-2">
-                  <img src="place.png" />
+                  <img src="/hw30img/place.png" />
                   <p class="text-sm mt-2">
                     Exterior view of the gallery on Sonneggstrasse in Zurich,
                     1992
@@ -119,8 +119,8 @@
     <div class="bg-white">
       <div class="px-5">
         <div class="flex text-black p-5 items-center h-32">
-          <div class="mr-8"><img src="logo.svg" /></div>
-          <div class="mr-16"><img src="hwlogo.svg" /></div>
+          <div class="mr-8"><img src="/hw30img/logo.svg" /></div>
+          <div class="mr-16"><img src="/hw30img/hwlogo.svg" /></div>
           <div>
             <ul class="hidden md:flex">
               <li class="mr-6">
@@ -140,7 +140,7 @@
             </ul>
           </div>
 
-          <div class="ml-auto md:hidden"><img src="menu.svg" /></div>
+          <div class="ml-auto md:hidden"><img src="/hw30img/menu.svg" /></div>
         </div>
       </div>
     </div>
@@ -275,7 +275,7 @@
               </div>
               <div class="col-start-6 col-end-9">
                 <a @click="toggleModal()" class="cursor-pointer"
-                  ><img class="mb-20" src="img_2.png"
+                  ><img class="mb-20" src="/hw30img/img_2.png"
                 /></a>
               </div>
             </div>
@@ -304,7 +304,7 @@
               </div>
               <div class="col-start-6 col-end-9">
                 <a @click="toggleModal()" class="cursor-pointer"
-                  ><img class="mb-20" src="img_4.png"
+                  ><img class="mb-20" src="/hw30img/img_4.png"
                 /></a>
               </div>
             </div>
@@ -312,7 +312,7 @@
             <div class="flex contents">
               <div class="col-start-1 col-end-5">
                 <a @click="toggleModal()" class="cursor-pointer"
-                  ><img class="pl-4 ml-auto mb-10" src="img_3.png" />
+                  ><img class="pl-4 ml-auto mb-10" src="/hw30img/img_3.png" />
                 </a>
               </div>
               <div class="col-start-5 col-end-6 mx-auto relative">
