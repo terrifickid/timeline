@@ -118,9 +118,13 @@
     <!-- header -->
     <div class="bg-white">
       <div class="px-5">
-        <div class="flex text-black p-5 items-center h-32">
-          <div class="mr-8"><img src="/hw30img/logo.svg" /></div>
-          <div class="mr-16"><img src="/hw30img/hwlogo.svg" /></div>
+        <div class="flex text-black p-5 items-center">
+          <div class="mr-8">
+            <img style="width: 81px" src="/hw30img/logo.svg" />
+          </div>
+          <div class="mr-16">
+            <img style="width: 186px" src="/hw30img/hwlogo.svg" />
+          </div>
           <div>
             <ul class="hidden md:flex">
               <li class="mr-6">
