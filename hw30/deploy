@@ -1,5 +1,5 @@
 yarn build
-cp -rf dist/* .
+cp -rf dist/* ..
 git add -A
 git commit -a -m 'auto-deploy'
 git push dev main
