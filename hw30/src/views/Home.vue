@@ -19,7 +19,7 @@
                   <div class="flex mx-auto md:ml-24">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="h-6 w-6 mr-2 cursor-pointer text-gray-300"
+                      class="h-6 w-6 cursor-pointer text-gray-300"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
@@ -38,7 +38,7 @@
                     <span class="hidden md:inline cursor-pointer">Next</span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="h-6 w-6 ml-2 cursor-pointer"
+                      class="h-6 w-6 cursor-pointer"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
