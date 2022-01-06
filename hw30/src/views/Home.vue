@@ -117,16 +117,16 @@
 
     <!-- header -->
     <div class="bg-white text-black">
-      <div class="grid grid-cols-6 p-4">
-        <div>
+      <div class="grid grid-cols-12 p-4">
+        <div class="col-span-2">
           <div class="flex">
             <img src="/hw30img/logo.svg" />
           </div>
         </div>
 
-        <div class="col-span-3">
+        <div class="col-span-5">
           <div class="flex h-full items-center">
-            <img class="ml-8 w-full" src="/hw30img/hwlogo.svg" />
+            <img class="w-full" src="/hw30img/hwlogo.svg" />
           </div>
         </div>
 
