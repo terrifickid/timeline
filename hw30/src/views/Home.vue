@@ -297,13 +297,13 @@
                 </div>
               </div>
               <div class="col-start-5 col-end-6 mx-auto relative">
-                <div class="h-full w-8 flex items-center justify-center">
+                <div class="h-full w-6 flex items-center justify-center">
                   <div
                     class="h-full w-px bg-gray-100 pointer-events-none"
                   ></div>
                 </div>
                 <div
-                  class="w-8 h-8 absolute top-0 -mt-2 rounded-full bg-white"
+                  class="w-6 h-6 absolute top-0 -mt-1 rounded-full bg-white"
                 ></div>
               </div>
               <div class="col-start-6 col-end-9">
