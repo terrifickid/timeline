@@ -169,7 +169,7 @@
         class="col-span-12 md:col-span-10 lg:col-span-6 md:col-start-2 lg:col-start-4 text-center pt-10 pb-5"
       >
         <h1 class="text-4xl md:text-6xl font-medium mb-4">The timeline</h1>
-        <p>
+        <p class="leading-7">
           On the occasion of its 30th anniversary, Hauser & Wirth presents 30
           Years, an interactive, digital chronology that traces the journey of
           Hauser & Wirth and the artists who have shaped it through personal
@@ -199,7 +199,23 @@
             />
           </svg>
         </li>
-        <li class="w-1/2 text-right">Filter</li>
+        <li class="w-1/2 justify-end flex">
+          <span class="mr-3">Filter</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
+            />
+          </svg>
+        </li>
       </ul>
       <ul class="hidden md:flex justify-center">
         <li class="mr-10">
@@ -261,8 +277,8 @@
                 </div>
                 <div class="w-64 top-0 text-center absolute left-4 -ml-32">
                   <div class="pt-12">
-                    <p class="text-7xl font-medium mb-2">1993</p>
-                    <p class="text-3xl font-medium">The Beginning</p>
+                    <p class="text-5xl lg:text-7xl font-medium mb-2">1993</p>
+                    <p class="text-2xl font-medium">The Beginning</p>
                   </div>
                 </div>
               </div>
@@ -273,7 +289,7 @@
                 <div class="h-full flex items-start">
                   <div class="text-right ml-4">
                     <h3 class="text-sm mb-1">Zurich</h3>
-                    <p class="font-medium text-3xl">
+                    <p class="font-medium text-xl lg:text-3xl">
                       Ursula Hauser & Iwan Wirth open their first gallery
                       together
                     </p>
