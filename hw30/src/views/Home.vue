@@ -337,7 +337,7 @@
               </div>
               <div class="col-start-6 col-end-9">
                 <a @click="toggleModal()" class="cursor-pointer"
-                  ><img class="lg:mb-20" src="/hw30img/img_4.png"
+                  ><img class="mb-10 lg:mb-20" src="/hw30img/img_4.png"
                 /></a>
               </div>
             </div>
@@ -346,7 +346,7 @@
               <div class="col-start-1 col-end-5">
                 <a @click="toggleModal()" class="cursor-pointer"
                   ><img
-                    class="pl-4 ml-auto lg:mb-20"
+                    class="pl-4 ml-auto mb-10 lg:mb-20"
                     src="/hw30img/img_3.png"
                   />
                 </a>
