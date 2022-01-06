@@ -164,7 +164,7 @@
     <!-- end header -->
 
     <!-- timeline text -->
-    <div class="container mx-auto grid grid-cols-12 px-8">
+    <div class="container mx-auto grid grid-cols-12 px-4">
       <div
         class="col-span-12 md:col-span-10 lg:col-span-6 md:col-start-2 lg:col-start-4 text-center pt-10 pb-5"
       >
