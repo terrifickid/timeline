@@ -128,7 +128,7 @@
           <div>
             <ul class="hidden md:flex">
               <li class="mr-6">
-                <a class="hover:underline" href="#">Timeline</a>
+                <a class="hover:underline" href="#">test Timeline</a>
               </li>
               <li class="mr-6">
                 <a class="hover:underline" href="#">Index</a>
