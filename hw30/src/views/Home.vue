@@ -375,7 +375,7 @@
             <!-- left -->
             <div class="flex flex-row-reverse contents">
               <div class="col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto">
-                <h3 class="mb-1 text-sm">
+                <h3 class="mb-1 text-xs">
                   Discover More <span class="font-semibold">(3)</span>
                 </h3>
               </div>
