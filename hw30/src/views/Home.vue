@@ -118,14 +118,14 @@
     <!-- header -->
     <div class="bg-white text-black">
       <div class="container mx-auto px-4">
-        <div class="grid grid-cols-3 py-4">
+        <div class="grid grid-cols-4 py-4">
           <div>
             <div class="flex">
               <img class="object-scale-down" src="/hw30img/logo.svg" />
             </div>
           </div>
 
-          <div>
+          <div class="col-span-2">
             <div class="flex h-full items-center">
               <img class="object-scale-down" src="/hw30img/hwlogo.svg" />
             </div>
