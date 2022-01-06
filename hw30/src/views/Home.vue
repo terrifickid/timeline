@@ -168,7 +168,7 @@
       <div
         class="col-span-12 md:col-span-10 lg:col-span-6 md:col-start-2 lg:col-start-4 text-center pt-10 pb-5"
       >
-        <h1 class="text-4xl md:text-6xl font-medium mb-4">The timeline</h1>
+        <h1 class="text-4xl lg:text-6xl font-medium mb-4">The timeline</h1>
         <p class="leading-7">
           On the occasion of its 30th anniversary, Hauser & Wirth presents 30
           Years, an interactive, digital chronology that traces the journey of
@@ -270,7 +270,7 @@
           <div class="flex flex-col grid grid-cols-9 mx-auto text-white">
             <div class="flex contents">
               <div class="col-start-5 col-end-6 mx-auto relative">
-                <div class="h-64 w-8 flex items-center justify-center">
+                <div class="h-48 lg:h-64 w-8 flex items-center justify-center">
                   <div
                     class="h-full w-px bg-gray-100 pointer-events-none"
                   ></div>
