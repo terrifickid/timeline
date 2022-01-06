@@ -123,7 +123,7 @@
             <img class="max-w-full" src="/hw30img/logo.svg" />
           </div>
 
-          <div class="col-span-6">
+          <div class="col-span-8">
             <div class="flex h-full items-center">
               <img
                 class="mx-auto px-4 object-scale-down"
