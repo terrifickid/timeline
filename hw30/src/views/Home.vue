@@ -116,20 +116,20 @@
     </div>
 
     <!-- header -->
-    <div class="bg-white">
-      <div class="px-5">
-        <div class="flex text-black p-5 items-center">
-          <div class="mr-8">
-            <img style="width: 81px" src="/hw30img/logo.svg" />
+    <div class="bg-white text-black">
+      <div class="grid grid-cols-3 p-4">
+        <div class="col-span-2 lg:col-span-1">
+          <div class="flex">
+            <img class="mr-6" src="/hw30img/logo.svg" />
+            <img src="/hw30img/hwlogo.svg" />
           </div>
-          <div class="mr-16">
-            <img style="width: 186px" src="/hw30img/hwlogo.svg" />
-            test
-          </div>
-          <div>
-            <ul class="hidden md:flex">
+        </div>
+
+        <div class="hidden lg:block">
+          <div class="flex h-full items-center">
+            <ul class="flex">
               <li class="mr-6">
-                <a class="hover:underline" href="#">test gTimeline</a>
+                <a class="hover:underline" href="#">Timeline</a>
               </li>
               <li class="mr-6">
                 <a class="hover:underline" href="#">Index</a>
@@ -137,15 +137,19 @@
               <li><a class="hover:underline" href="#">About</a></li>
             </ul>
           </div>
+        </div>
 
-          <div class="hidden md:block ml-auto">
+        <div class="hidden lg:block">
+          <div class="flex h-full items-center justify-end">
             <ul class="flex">
               <li class="mr-4">ENG</li>
               <li>*!#</li>
             </ul>
           </div>
+        </div>
 
-          <div class="ml-auto md:hidden"><img src="/hw30img/menu.svg" /></div>
+        <div class="ml-auto lg:hidden flex">
+          <img class="ml-auto" src="/hw30img/menu.svg" />
         </div>
       </div>
     </div>
