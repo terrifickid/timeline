@@ -118,14 +118,12 @@
     <!-- header -->
     <div class="bg-white text-black">
       <div class="container mx-auto px-4">
-        <div class="grid grid-cols-5 py-4">
-          <div>
-            <div class="flex">
-              <img class="object-scale-down" src="/hw30img/logo.svg" />
-            </div>
+        <div class="grid grid-cols-8 py-4">
+          <div class="col-span-2">
+            <img class="max-w-full" src="/hw30img/logo.svg" />
           </div>
 
-          <div class="col-span-3">
+          <div class="col-span-4">
             <div class="flex h-full items-center">
               <img
                 class="mx-auto px-4 object-scale-down"
@@ -157,8 +155,8 @@
             </div>
           </div>
 
-          <div class="ml-auto lg:hidden flex">
-            <img class="ml-auto" src="/hw30img/menu.svg" />
+          <div class="col-span-2 lg:hidden flex">
+            <img class="ml-auto w-10" src="/hw30img/menu.svg" />
           </div>
         </div>
       </div>
