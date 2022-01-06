@@ -15,7 +15,7 @@
             <div class="col-span-10">
               <div class="flex items-center h-32 border-b border-black mb-10">
                 <div class="flex items-center w-full pt-5">
-                  <p class="text-3xl font-medium">1992</p>
+                  <p class="text-2xl lg:text-3xl font-medium">1992</p>
                   <div class="flex mx-auto md:ml-24">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
