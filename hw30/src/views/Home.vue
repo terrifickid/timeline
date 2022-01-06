@@ -119,7 +119,7 @@
     <div class="bg-white text-black">
       <div class="container mx-auto px-4">
         <div class="grid grid-cols-12 py-4">
-          <div class="col-span-2">
+          <div class="col-span-3">
             <img class="max-w-full" src="/hw30img/logo.svg" />
           </div>
 
