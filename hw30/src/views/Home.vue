@@ -124,11 +124,12 @@
           </div>
           <div class="mr-16">
             <img style="width: 186px" src="/hw30img/hwlogo.svg" />
+            test
           </div>
           <div>
             <ul class="hidden md:flex">
               <li class="mr-6">
-                <a class="hover:underline" href="#">test Timeline</a>
+                <a class="hover:underline" href="#">test gTimeline</a>
               </li>
               <li class="mr-6">
                 <a class="hover:underline" href="#">Index</a>
