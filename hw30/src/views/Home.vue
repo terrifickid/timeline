@@ -119,11 +119,11 @@
     <div class="bg-white text-black">
       <div class="container mx-auto px-4">
         <div class="grid grid-cols-12 py-4">
-          <div class="col-span-3">
+          <div class="col-span-2">
             <img class="max-w-full" src="/hw30img/logo.svg" />
           </div>
 
-          <div class="col-span-4">
+          <div class="col-span-6">
             <div class="flex h-full items-center">
               <img
                 class="mx-auto px-4 object-scale-down"
@@ -156,7 +156,7 @@
           </div>
 
           <div class="col-span-2 lg:hidden flex">
-            <img class="ml-auto w-10" src="/hw30img/menu.svg" />
+            <img class="ml-auto w-8" src="/hw30img/menu.svg" />
           </div>
         </div>
       </div>
