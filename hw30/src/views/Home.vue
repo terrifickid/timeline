@@ -83,7 +83,7 @@
                   </p>
                 </div>
                 <div class="col-span-5 md:col-span-3">
-                  <h1 class="text-5xl font-medium mb-6">
+                  <h1 class="text-3xl md:text-5xl font-medium mb-6">
                     Ursula Hauser & Iwan Wirth open their first gallery together
                   </h1>
                   <p class="font-bold mb-6">
