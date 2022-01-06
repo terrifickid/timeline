@@ -1,4 +1,5 @@
 yarn build
+mv dist/index.php ../wp-content/themes/hw30-frontend-demo/
 cp -rf dist/* ..
 git add -A
 git commit -a -m 'auto-deploy'
