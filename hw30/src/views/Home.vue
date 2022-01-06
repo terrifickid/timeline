@@ -119,20 +119,20 @@
     <div class="bg-white text-black">
       <div class="container mx-auto px-4">
         <div class="grid grid-cols-12 py-4">
-          <div class="col-span-2">
+          <div class="col-span-2 lg:col-span-1">
             <img class="max-w-full" src="/hw30img/logo.svg" />
           </div>
 
-          <div class="col-span-8">
+          <div class="col-span-8 lg:col-span-4 xl:col-span-3">
             <div class="flex h-full items-center">
               <img
-                class="mx-auto px-8 object-scale-down"
+                class="mx-auto lg:ml-0 px-8 object-scale-down"
                 src="/hw30img/hwlogo.svg"
               />
             </div>
           </div>
 
-          <div class="hidden lg:block">
+          <div class="hidden lg:block lg:col-span-6 xl:col-span-7">
             <div class="flex h-full items-center">
               <ul class="flex">
                 <li class="mr-6">
@@ -164,7 +164,7 @@
     <!-- end header -->
 
     <!-- timeline text -->
-    <div class="container mx-auto grid grid-cols-12 px-5">
+    <div class="container mx-auto grid grid-cols-12 px-8">
       <div
         class="col-span-12 md:col-span-10 lg:col-span-6 md:col-start-2 lg:col-start-4 text-center pt-10 pb-5"
       >
