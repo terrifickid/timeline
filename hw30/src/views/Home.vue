@@ -128,7 +128,7 @@
           <div class="col-span-3">
             <div class="flex h-full items-center">
               <img
-                class="mx-auto object-scale-down"
+                class="mx-auto px-4 object-scale-down"
                 src="/hw30img/hwlogo.svg"
               />
             </div>
