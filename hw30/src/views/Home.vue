@@ -318,7 +318,7 @@
                 <div class="h-full flex items-start">
                   <div class="text-right pl-4">
                     <h3 class="text-sm mb-1">Zurich</h3>
-                    <p class="font-medium text-3xl">
+                    <p class="font-medium text-xl lg:text-3xl">
                       Ursula Hauser & Iwan Wirth open their first gallery
                       together
                     </p>
@@ -362,7 +362,7 @@
                 <div class="h-full flex items-start">
                   <div class="text-left">
                     <h3 class="text-sm mb-1">Publishers</h3>
-                    <p class="font-medium text-3xl">
+                    <p class="font-medium text-xl lg:text-3xl">
                       Hauser & Wirth publishes its first books
                     </p>
                   </div>
