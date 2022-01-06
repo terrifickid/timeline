@@ -124,9 +124,9 @@
           </div>
         </div>
 
-        <div class="col-span-4">
+        <div class="col-span-3">
           <div class="flex h-full items-center">
-            <img class="ml-8" src="/hw30img/hwlogo.svg" />
+            <img class="ml-8 w-full" src="/hw30img/hwlogo.svg" />
           </div>
         </div>
 
