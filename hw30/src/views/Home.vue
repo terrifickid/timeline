@@ -375,7 +375,7 @@
             <!-- left -->
             <div class="flex flex-row-reverse contents">
               <div class="col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto">
-                <h3 class="mb-1">
+                <h3 class="mb-1 text-sm">
                   Discover More <span class="font-semibold">(3)</span>
                 </h3>
               </div>
@@ -386,7 +386,7 @@
                   ></div>
                 </div>
                 <div
-                  class="w-10 h-10 absolute top-1/2 -mt-5 -ml-1 rounded-full bg-white text-black flex items-center justify-center"
+                  class="w-10 h-10 absolute top-1/2 -mt-5 -ml-2 rounded-full bg-white text-black flex items-center justify-center"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
