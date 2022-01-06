@@ -289,7 +289,7 @@
                 <div class="h-full flex items-start">
                   <div class="text-right ml-4">
                     <h3 class="text-sm mb-1">Zurich</h3>
-                    <p class="font-medium text-xl lg:text-3xl">
+                    <p class="font-medium text-xl lg:text-3xl mb-10">
                       Ursula Hauser & Iwan Wirth open their first gallery
                       together
                     </p>
@@ -308,7 +308,7 @@
               </div>
               <div class="col-start-6 col-end-9">
                 <a @click="toggleModal()" class="cursor-pointer"
-                  ><img class="mb-20" src="/hw30img/img_2.png"
+                  ><img class="mb-10 lg:mb-20" src="/hw30img/img_2.png"
                 /></a>
               </div>
             </div>
@@ -337,7 +337,7 @@
               </div>
               <div class="col-start-6 col-end-9">
                 <a @click="toggleModal()" class="cursor-pointer"
-                  ><img class="mb-20" src="/hw30img/img_4.png"
+                  ><img class="lg:mb-20" src="/hw30img/img_4.png"
                 /></a>
               </div>
             </div>
@@ -345,7 +345,10 @@
             <div class="flex contents">
               <div class="col-start-1 col-end-5">
                 <a @click="toggleModal()" class="cursor-pointer"
-                  ><img class="pl-4 ml-auto mb-10" src="/hw30img/img_3.png" />
+                  ><img
+                    class="pl-4 ml-auto lg:mb-20"
+                    src="/hw30img/img_3.png"
+                  />
                 </a>
               </div>
               <div class="col-start-5 col-end-6 mx-auto relative">
