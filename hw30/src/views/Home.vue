@@ -11,11 +11,12 @@
           class="col-span-12 lg:col-span-10 h-screen bg-white text-black overflow-y-scroll"
         >
           <div class="grid grid-cols-12">
-            <div class="col-span-1"></div>
-            <div class="col-span-10">
-              <div class="flex items-center h-32 border-b border-black mb-10">
-                <div class="flex items-center w-full pt-5">
-                  <p class="text-2xl lg:text-3xl font-medium">1992</p>
+            <div class="col-span-12 px-4 md:px-20">
+              <div
+                class="flex items-center border-b border-black mb-10 pt-6 pb-8 md:pt-12"
+              >
+                <div class="flex items-center w-full">
+                  <p class="text-xl md:text-3xl font-medium">1992</p>
                   <div class="hidden sm:flex mx-auto md:ml-24">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
