@@ -117,44 +117,46 @@
 
     <!-- header -->
     <div class="bg-white text-black">
-      <div class="grid grid-cols-12 p-4">
-        <div class="col-span-2">
-          <div class="flex">
-            <img src="/hw30img/logo.svg" />
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-12 py-4">
+          <div class="col-span-2">
+            <div class="flex">
+              <img src="/hw30img/logo.svg" />
+            </div>
           </div>
-        </div>
 
-        <div class="col-span-5">
-          <div class="flex h-full items-center">
-            <img class="w-full" src="/hw30img/hwlogo.svg" />
+          <div class="col-span-5">
+            <div class="flex h-full items-center">
+              <img class="object-scale-down" src="/hw30img/hwlogo.svg" />
+            </div>
           </div>
-        </div>
 
-        <div class="hidden lg:block">
-          <div class="flex h-full items-center">
-            <ul class="flex">
-              <li class="mr-6">
-                <a class="hover:underline" href="#">Timeline</a>
-              </li>
-              <li class="mr-6">
-                <a class="hover:underline" href="#">Index</a>
-              </li>
-              <li><a class="hover:underline" href="#">About</a></li>
-            </ul>
+          <div class="hidden lg:block">
+            <div class="flex h-full items-center">
+              <ul class="flex">
+                <li class="mr-6">
+                  <a class="hover:underline" href="#">Timeline</a>
+                </li>
+                <li class="mr-6">
+                  <a class="hover:underline" href="#">Index</a>
+                </li>
+                <li><a class="hover:underline" href="#">About</a></li>
+              </ul>
+            </div>
           </div>
-        </div>
 
-        <div class="hidden lg:block">
-          <div class="flex h-full items-center justify-end">
-            <ul class="flex">
-              <li class="mr-4">ENG</li>
-              <li>*!#</li>
-            </ul>
+          <div class="hidden lg:block">
+            <div class="flex h-full items-center justify-end">
+              <ul class="flex">
+                <li class="mr-4">ENG</li>
+                <li>*!#</li>
+              </ul>
+            </div>
           </div>
-        </div>
 
-        <div class="ml-auto lg:hidden flex">
-          <img class="ml-auto" src="/hw30img/menu.svg" />
+          <div class="ml-auto lg:hidden flex">
+            <img class="ml-auto" src="/hw30img/menu.svg" />
+          </div>
         </div>
       </div>
     </div>
