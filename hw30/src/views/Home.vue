@@ -118,7 +118,7 @@
     <!-- header -->
     <div class="bg-white text-black">
       <div class="container mx-auto px-4">
-        <div class="grid grid-cols-4 py-4">
+        <div class="grid grid-cols-5 py-4">
           <div>
             <div class="flex">
               <img class="object-scale-down" src="/hw30img/logo.svg" />
