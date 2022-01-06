@@ -16,7 +16,7 @@
               <div class="flex items-center h-32 border-b border-black mb-10">
                 <div class="flex items-center w-full pt-5">
                   <p class="text-2xl lg:text-3xl font-medium">1992</p>
-                  <div class="flex mx-auto md:ml-24">
+                  <div class="hidden sm:flex mx-auto md:ml-24">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       class="h-6 w-6 cursor-pointer text-gray-300"
@@ -31,11 +31,14 @@
                         d="M15 19l-7-7 7-7"
                       />
                     </svg>
-                    <span class="hidden md:inline text-gray-300 cursor-pointer"
+                    <span
+                      class="hidden md:inline text-gray-300 cursor-pointer ml-2"
                       >Previous</span
                     >
                     <span class="mx-6">1 / 4</span>
-                    <span class="hidden md:inline cursor-pointer">Next</span>
+                    <span class="hidden md:inline cursor-pointer mr-2"
+                      >Next</span
+                    >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       class="h-6 w-6 cursor-pointer"
