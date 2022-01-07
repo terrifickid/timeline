@@ -279,7 +279,6 @@
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="h-6 w-6"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
@@ -460,7 +459,7 @@
                     ></div>
                   </div>
                   <div
-                    class="w-10 h-10 absolute top-1/2 -mt-5 -ml-2 rounded-full bg-white text-black flex items-center justify-center"
+                    class="w-10 h-10 absolute top-1/2 -mt-5 -ml-2 lg:-ml-1 rounded-full bg-white text-black flex items-center justify-center"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
