@@ -243,7 +243,7 @@
               >By Artists & Estates</a
             >
           </li>
-          <li>
+          <li class="mx-6">
             <a href="#" class="flex h-8 hover:border-b-4 border-white"
               >By Locations
               <svg
