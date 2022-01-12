@@ -61,6 +61,7 @@ function h_timeline() {
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
 		'show_in_rest'          => true,
+		'rest_base'          		=> 'timeline',
 	);
 	register_post_type( 'h_timeline', $args );
 
