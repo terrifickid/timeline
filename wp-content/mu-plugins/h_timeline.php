@@ -69,3 +69,22 @@ function h_timeline() {
 add_action( 'init', 'h_timeline', 0 );
 
 }
+
+
+// add this to functions.php
+//register acf fields to Wordpress API
+//https://support.advancedcustomfields.com/forums/topic/json-rest-api-and-acf/
+function acf_to_rest_api($response, $post, $request) {
+    if (!function_exists('get_fields')) return $response;
+
+    if (isset($post)) {
+        $acf = get_fields($post->id);
+        $response->data['acf'] = $acf;
+
+
+        $response->data['toast'] = 'tk!';
+
+    }
+    return $response;
+}
+add_filter('rest_prepare_h_timeline', 'acf_to_rest_api', 10, 3);
