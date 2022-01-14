@@ -1,10 +1,10 @@
-<?php 
+<?php
 // Register Custom Taxonomy
-function custom_taxonomy1() {
+function custom_taxonomy2() {
 
 	$labels = array(
-		'name'                       => _x( 'Taxonomy1', 'Taxonomy General Name', 'text_domain' ),
-		'singular_name'              => _x( 'Taxonomy1', 'Taxonomy Singular Name', 'text_domain' ),
+		'name'                       => _x( 'Taxonomy2', 'Taxonomy General Name', 'text_domain' ),
+		'singular_name'              => _x( 'Taxonomy2', 'Taxonomy Singular Name', 'text_domain' ),
 		'menu_name'                  => __( 'Taxonomy', 'text_domain' ),
 		'all_items'                  => __( 'All Items', 'text_domain' ),
 		'parent_item'                => __( 'Parent Item', 'text_domain' ),
@@ -33,7 +33,7 @@ function custom_taxonomy1() {
 		'show_in_nav_menus'          => true,
 		'show_tagcloud'              => true,
 	);
-	register_taxonomy( 'taxonomy', array( 'h_timeline' ), $args );
+	register_taxonomy( 'taxonomy2', array( 'h_timeline' ), $args );
 
 }
-add_action( 'init', 'custom_taxonomy1', 0 );
+add_action( 'init', 'custom_taxonomy2', 0 );
