@@ -88,7 +88,7 @@
                 <div class="col-start-1 col-end-5 rounded-xl ml-auto">
                   <div class="h-full flex items-start">
                     <div class="text-right ml-4">
-                      <h3 class="text-sm mb-1">Category Name</h3>
+                      <h3 class="text-sm mb-1"></h3>
                       <p
                         class="font-medium text-xl lg:text-3xl mb-10"
                         v-html="entry.title"
