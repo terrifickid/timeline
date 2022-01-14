@@ -3,8 +3,8 @@
 function custom_taxonomy2() {
 
 	$labels = array(
-		'name'                       => _x( 'Taxonomy2', 'Taxonomy General Name', 'text_domain' ),
-		'singular_name'              => _x( 'Taxonomy2', 'Taxonomy Singular Name', 'text_domain' ),
+		'name'                       => _x( 'Artist', 'Taxonomy General Name', 'text_domain' ),
+		'singular_name'              => _x( 'Artists', 'Taxonomy Singular Name', 'text_domain' ),
 		'menu_name'                  => __( 'Taxonomy', 'text_domain' ),
 		'all_items'                  => __( 'All Items', 'text_domain' ),
 		'parent_item'                => __( 'Parent Item', 'text_domain' ),
@@ -33,7 +33,7 @@ function custom_taxonomy2() {
 		'show_in_nav_menus'          => true,
 		'show_tagcloud'              => true,
 	);
-	register_taxonomy( 'taxonomy2', array( 'h_timeline' ), $args );
+	register_taxonomy( 'artists', array( 'h_timeline' ), $args );
 
 }
 add_action( 'init', 'custom_taxonomy2', 0 );

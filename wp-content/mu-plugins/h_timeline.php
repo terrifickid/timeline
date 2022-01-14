@@ -46,7 +46,7 @@ function h_timeline() {
 		'description'           => __( 'Post Type Description', 'text_domain' ),
 		'labels'                => $labels,
 		'supports'              => array( 'title' ),
-		'taxonomies'            => array( 'taxonomy1', 'taxonomy2' ),
+		'taxonomies'            => array( 'locations', 'artists' ),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,
