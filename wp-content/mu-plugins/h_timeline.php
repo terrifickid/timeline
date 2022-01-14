@@ -46,7 +46,7 @@ function h_timeline() {
 		'description'           => __( 'Post Type Description', 'text_domain' ),
 		'labels'                => $labels,
 		'supports'              => array( 'title' ),
-		'taxonomies'            => array( 'category', 'post_tag' ),
+		'taxonomies'            => array( 'taxonomy1', 'taxonomy2' ),
 		'hierarchical'          => false,
 		'public'                => true,
 		'show_ui'               => true,
