@@ -55,7 +55,7 @@
                     />
                   </svg>
                 </div>
-                <a @click="toggleModal()" class="flex ml-auto cursor-pointer">
+                <a @click="close()" class="flex ml-auto cursor-pointer">
                   Close
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -117,8 +117,9 @@ export default {
     },
   },
   methods: {
-    toggleModal() {
-      this.$store.commit("setModal", !this.isModalActive);
+    close() {
+      this.$store.commit("setModal", false);
+      document.body.style.overflow = "scroll";
     },
   },
 };

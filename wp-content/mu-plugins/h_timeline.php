@@ -70,6 +70,11 @@ add_action( 'init', 'h_timeline', 0 );
 
 }
 
+require_once(__DIR__ . '/h_tax1.php');
+require_once(__DIR__ . '/h_tax2.php');
+require_once(__DIR__ . '/h_tax3.php');
+require_once(__DIR__ . '/h_tax4.php');
+require_once(__DIR__ . '/h_tax5.php');
 
 // add this to functions.php
 //register acf fields to Wordpress API

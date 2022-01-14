@@ -109,7 +109,7 @@
                   ></div>
                 </div>
                 <div class="col-start-6 col-end-9">
-                  <a @click="toggleModal(entry)" class="cursor-pointer"
+                  <a @click="open(entry)" class="cursor-pointer"
                     ><img
                       class="mb-10 lg:mb-20"
                       :src="entry.media_gallery[0].image_file.url"
@@ -167,9 +167,10 @@ export default {
     };
   },
   methods: {
-    toggleModal(entry) {
+    open(entry) {
       this.$store.commit("setActiveEntry", entry);
-      this.$store.commit("setModal", !this.isModalActive);
+      this.$store.commit("setModal", true);
+      document.body.style.overflow = "hidden";
     },
     displayDate(y) {
       if (this.years.includes(y)) return false;
