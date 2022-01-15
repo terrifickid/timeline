@@ -34,7 +34,7 @@ export default createStore({
       console.log("Loading..");
       //Load data
       var res = await axios.get(
-        "https://hauserwirth30.wpengine.com/wp-json/wp/v2/timeline/"
+        "https://hw30secure.wpengine.com/wp-json/wp/v2/timeline/"
       );
       console.log("loaded!");
       var years = [];

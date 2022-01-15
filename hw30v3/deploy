@@ -3,5 +3,5 @@ mv dist/index.php ../wp-content/themes/hw30-frontend-demo/
 cp -rf dist/* ..
 git add -A
 git commit -a -m 'auto-deploy'
-git push dev main
-git push github main 
+git push secure main
+ 
