@@ -15,3 +15,5 @@ $args = array(
 
 // The Query
 $query = new WP_Query( $args );
+
+print_r(json_encode($query->get_posts()));
