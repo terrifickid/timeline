@@ -4,4 +4,4 @@ cp -rf dist/* ..
 git add -A
 git commit -a -m 'auto-deploy'
 git push secure main
- 
+git push github main 
