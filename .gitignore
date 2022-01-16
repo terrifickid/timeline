@@ -7,7 +7,6 @@
 Thumbs.db
 
 # wordpress specific
-wp-config.php
 wp-content/uploads/
 wp-content/blogs.dir/
 wp-content/upgrade/*
@@ -31,7 +30,7 @@ wp-content/mysql.sql
 wp-content/mu-plugins/wpengine-security-auditor.php
 wp-content/mu-plugins/wpe-wp-sign-on-plugin*
 
-# smart plugin manager specific 
+# smart plugin manager specific
 wp-content/plugins/*
 wp-content/.logs/
 autoupdater_maintenance_mode_enabled.tmp
