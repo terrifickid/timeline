@@ -6,7 +6,6 @@
  *
  * @package wpengine/common-mu-plugin
  */
- require_once(__DIR__ . '/wp-security-audit-log-premium/wp-security-audit-log.php');
 require_once(__DIR__ . '/advanced-custom-fields-pro/acf.php');
 
 if ( ! function_exists('h_timeline') ) {
