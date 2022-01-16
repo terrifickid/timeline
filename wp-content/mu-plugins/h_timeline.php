@@ -8,7 +8,7 @@
  */
 require_once(__DIR__ . '/advanced-custom-fields-pro/acf.php');
 if ( ! function_exists('h_timeline') ) {
-
+add_filter('use_block_editor_for_post', '__return_false', 10); 
 // Register Custom Post Type
 function h_timeline() {
 
