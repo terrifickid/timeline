@@ -8,7 +8,7 @@
  */
  require_once(__DIR__ . '/stream/stream.php');
 require_once(__DIR__ . '/advanced-custom-fields-pro/acf.php');
-add_filter('acf/settings/show_admin', '__return_false');
+//add_filter('acf/settings/show_admin', '__return_false');
 if ( ! function_exists('h_timeline') ) {
 add_filter('use_block_editor_for_post', '__return_false', 10);
 // Register Custom Post Type
