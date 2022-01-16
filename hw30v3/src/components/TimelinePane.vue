@@ -63,8 +63,8 @@
         </div>
         <div class="col-span-12 md:col-span-8">
           <div class="flex flex-col grid grid-cols-9 mx-auto text-white">
-            <template v-for="(entry, index) in timeline" :key="index">
-              <div class="flex contents" v-if="entry.showDate">
+            <template v-for="(data, index) in timeline" :key="index">
+              <div class="flex contents">
                 <div class="col-start-5 col-end-6 mx-auto relative">
                   <div
                     class="h-48 lg:h-64 w-8 flex items-center justify-center"
@@ -76,51 +76,65 @@
                   <div class="w-64 top-0 text-center absolute left-4 -ml-32">
                     <div class="pt-12">
                       <p class="text-5xl lg:text-7xl font-medium mb-2">
-                        {{ entry.date[2] }}
+                        {{ index }}
                       </p>
                       <p class="hidden text-2xl font-medium">The Beginning</p>
                     </div>
                   </div>
                 </div>
               </div>
-              <!-- left -->
-              <div class="flex flex-row-reverse contents">
-                <div class="col-start-1 col-end-5 rounded-xl ml-auto">
-                  <div class="h-full flex items-start">
-                    <div class="text-right ml-4">
-                      <h3 class="text-sm mb-1"></h3>
-                      <p
-                        class="font-medium text-xl lg:text-3xl mb-10"
-                        v-html="entry.title"
-                      ></p>
+              <template
+                v-for="(entry, index) in data.entries.slice(0, data.showCount)"
+                :key="index"
+              >
+                <!-- left -->
+                <div class="flex flex-row-reverse contents">
+                  <div class="col-start-1 col-end-5 rounded-xl ml-auto">
+                    <div class="h-full flex items-start">
+                      <div class="text-right ml-4">
+                        <h3 class="text-sm mb-1"></h3>
+                        <p
+                          class="font-medium text-xl lg:text-3xl mb-10"
+                          v-html="entry.title"
+                        ></p>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="col-start-5 col-end-6 mx-auto relative">
-                  <div
-                    class="h-full w-6 lg:w-8 flex items-center justify-center"
-                  >
+                  <div class="col-start-5 col-end-6 mx-auto relative">
                     <div
-                      class="h-full w-px bg-gray-100 pointer-events-none"
+                      class="h-full w-6 lg:w-8 flex items-center justify-center"
+                    >
+                      <div
+                        class="h-full w-px bg-gray-100 pointer-events-none"
+                      ></div>
+                    </div>
+                    <div
+                      class="w-6 h-6 lg:w-8 lg:h-8 absolute top-0 rounded-full bg-white"
                     ></div>
                   </div>
-                  <div
-                    class="w-6 h-6 lg:w-8 lg:h-8 absolute top-0 rounded-full bg-white"
-                  ></div>
+                  <div class="col-start-6 col-end-9">
+                    <a @click="open(entry)" class="cursor-pointer"
+                      ><img
+                        v-if="entry.media_gallery[0]"
+                        class="mb-10 lg:mb-20"
+                        :src="entry.media_gallery[0].image_file.url"
+                    /></a>
+                  </div>
                 </div>
-                <div class="col-start-6 col-end-9">
-                  <a @click="open(entry)" class="cursor-pointer"
-                    ><img
-                      class="mb-10 lg:mb-20"
-                      :src="entry.media_gallery[0].image_file.url"
-                  /></a>
-                </div>
-              </div>
+              </template>
+
               <!-- left -->
-              <div class="flex flex-row-reverse contents hidden">
+              <a
+                v-if="data.entries.length > data.showCount"
+                class="flex flex-row-reverse contents cursor-pointer"
+                @click="data.showCount = data.entries.length"
+              >
                 <div class="col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto">
                   <h3 class="mb-1 text-xs lg:text-base">
-                    Discover More <span class="font-semibold">(3)</span>
+                    Discover More
+                    <span class="font-semibold"
+                      >({{ data.entries.length }})</span
+                    >
                   </h3>
                 </div>
                 <div class="col-start-5 col-end-6 mx-auto relative">
@@ -150,7 +164,7 @@
                     </svg>
                   </div>
                 </div>
-              </div>
+              </a>
             </template>
           </div>
         </div>

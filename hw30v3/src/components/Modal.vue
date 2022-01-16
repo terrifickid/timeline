@@ -75,7 +75,10 @@
               </div>
             </div>
 
-            <div class="grid grid-cols-5 gap-8 mb-20">
+            <div
+              class="grid grid-cols-5 gap-8 mb-20"
+              v-if="activeEntry.media_gallery[0]"
+            >
               <div class="col-span-5 md:col-span-2">
                 <img :src="activeEntry.media_gallery[0].image_file.url" />
                 <p class="text-sm mt-2">

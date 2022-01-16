@@ -37,19 +37,32 @@ export default createStore({
         "https://hw30secure1.wpengine.com/wp-json/wp/v2/timeline/"
       );
       console.log("loaded!");
-      var years = [];
+
+      //Create Timestream Array
+      var timestream = {};
+
+      //Map Entries Format
       var timeline = res.data.map((entry) => {
         var d = entry.acf;
         d.date = entry.acf.date.split(",");
-        if (!years.includes(d.date[2])) {
-          years.push(d.date[2]);
-          d.showDate = true;
-        }
         d.title = entry.title.rendered;
         return d;
       });
-      commit("setTimeline", timeline);
-      commit("setActiveEntry", timeline[0]);
+
+      //Categorize by Year
+      timeline.forEach((element) => {
+        if (!timestream[element.date[2]])
+          timestream[element.date[2]] = { showCount: 2, entries: [] };
+        timestream[element.date[2]].entries.push(element);
+      });
+
+      console.log(timestream);
+
+      commit("setTimeline", timestream);
+      commit(
+        "setActiveEntry",
+        timestream[Object.keys(timestream)[0]].entries[0]
+      );
     },
   },
   modules: {},
