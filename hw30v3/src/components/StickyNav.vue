@@ -3,7 +3,7 @@
     <div class="container px-4 mx-auto">
       <ul class="flex lg:hidden h-8">
         <li class="w-1/2 flex">
-          1993
+          ####
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-6 w-6 ml-2"
@@ -38,44 +38,26 @@
         </li>
       </ul>
       <ul class="hidden lg:flex justify-center">
-        <li class="mx-6">
+        <li class="mx-8">
           <a href="#" class="flex h-8 hover:border-b-4 border-white"
             >View All</a
           >
         </li>
-        <li class="mx-6">
-          <a href="#" class="flex h-8 hover:border-b-4 border-white"
-            >Key Milestones</a
-          >
+        <li class="mx-8">
+          <a href="#" class="flex h-8 hover:border-b-4 border-white">Artists</a>
+          <div class="absolute bg-black -ml-5">
+            <ul class="p-5">
+              <li>Sub Item Smoething Longer</li>
+              <li>Sub Item</li>
+              <li>Sub Item</li>
+              <li>Sub Item</li>
+            </ul>
+          </div>
         </li>
-        <li class="mx-6">
+        <li class="mx-8">
           <a href="#" class="flex h-8 hover:border-b-4 border-white"
-            >Historical Exhbitions</a
+            >Locations</a
           >
-        </li>
-        <li class="mx-6">
-          <a href="#" class="flex h-8 hover:border-b-4 border-white"
-            >By Artists & Estates</a
-          >
-        </li>
-        <li class="mx-6">
-          <a href="#" class="flex h-8 hover:border-b-4 border-white"
-            >By Locations
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6 ml-2"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M19 9l-7 7-7-7"
-              />
-            </svg>
-          </a>
         </li>
       </ul>
     </div>

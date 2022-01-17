@@ -80,15 +80,12 @@ add_action( 'init', 'h_timeline', 0 );
 //https://support.advancedcustomfields.com/forums/topic/json-rest-api-and-acf/
 function acf_to_rest_api($response, $post, $request) {
     if (!function_exists('get_fields')) return $response;
-
-    if (isset($post)) {
-        $acf = get_fields($post->id);
+		if (isset($post)) {
+		 		$acf = get_fields($post->id);
         $response->data['acf'] = $acf;
-
-
-        $response->data['toast'] = 'tk!';
-
-    }
+				$response->data['locations'] = get_the_terms( $post->ID, 'locations' );
+				$response->data['artists'] = get_the_terms( $post->ID, 'artists' );
+		}
     return $response;
 }
 add_filter('rest_prepare_h_timeline', 'acf_to_rest_api', 10, 3);
