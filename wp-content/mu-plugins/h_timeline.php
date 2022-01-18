@@ -89,3 +89,12 @@ function acf_to_rest_api($response, $post, $request) {
     return $response;
 }
 add_filter('rest_prepare_h_timeline', 'acf_to_rest_api', 10, 3);
+
+
+
+///
+function increase_per_page_max($params){
+    $params['per_page']['maximum'] = 1000;
+    return $params;
+}
+add_filter('rest_h_timeline_collection_params', 'increase_per_page_max');

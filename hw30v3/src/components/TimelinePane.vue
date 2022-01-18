@@ -10,10 +10,13 @@
           <YearScroller></YearScroller>
         </div>
         <div class="col-span-12 md:col-span-8">
-          <template v-for="(data, index) in timeline" :key="index">
+          <template v-for="(data, index) in timestream" :key="index">
             <YearBlock :index="index" />
             <template
-              v-for="(entry, index) in data.entries.slice(0, data.showCount)"
+              v-for="(entry, index) in data.entries.slice(
+                0,
+                showCountFunc(index)
+              )"
               :key="index"
             >
               <EntryLeft :entry="entry" />
@@ -24,8 +27,8 @@
               />
             </template>
             <Discover
-              v-if="data.entries.length > data.showCount"
-              @click="data.showCount = data.entries.length"
+              v-if="data.entries.length > showCountFunc(index)"
+              @click="showCount[index] = data.entries.length"
               >{{ data.entries.length }}</Discover
             >
           </template>
@@ -51,22 +54,18 @@ export default {
   },
   data() {
     return {
-      years: [],
+      showCount: {},
     };
   },
   methods: {
-    displayDate(y) {
-      if (this.years.includes(y)) return false;
-      this.years.push(y);
-      return true;
+    showCountFunc(t) {
+      if (this.showCount[t]) return this.showCount[t];
+      return 2;
     },
   },
   computed: {
-    timeline() {
-      return this.$store.state.timeline;
-    },
-    isModalActive() {
-      return this.$store.state.isModalActive;
+    timestream() {
+      return this.$store.getters.timestream;
     },
   },
 };

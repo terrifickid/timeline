@@ -39,27 +39,92 @@
       </ul>
       <ul class="hidden lg:flex justify-center">
         <li class="mx-8">
-          <a href="#" class="flex h-8 hover:border-b-4 border-white"
+          <a
+            @click="viewAll()"
+            class="flex h-8 hover:border-b-4 border-white cursor-pointer"
             >View All</a
           >
         </li>
         <li class="mx-8">
-          <a href="#" class="flex h-8 hover:border-b-4 border-white">Artists</a>
-          <div class="absolute bg-black -ml-5">
+          <a
+            @click="toggleNav('artists')"
+            class="flex h-8 hover:border-b-4 border-white cursor-pointer"
+            >Artists</a
+          >
+          <div v-show="nav == 'artists'" class="absolute bg-black -ml-5">
             <ul class="p-5">
-              <li>Sub Item Smoething Longer</li>
-              <li>Sub Item</li>
-              <li>Sub Item</li>
-              <li>Sub Item</li>
+              <li v-for="(artist, index) in artists" :key="index" class="mb-1">
+                <a
+                  @click="setArtistFilter(artist)"
+                  :class="{
+                    'font-bold': artistsFilter.includes(artist.slug),
+                  }"
+                  class="cursor-pointer"
+                  >{{ artist.name }}</a
+                >
+              </li>
             </ul>
           </div>
         </li>
         <li class="mx-8">
-          <a href="#" class="flex h-8 hover:border-b-4 border-white"
+          <a
+            @click="toggleNav('locations')"
+            class="flex h-8 hover:border-b-4 border-white cursor-pointer"
             >Locations</a
           >
+          <div v-show="nav == 'locations'" class="absolute bg-black -ml-5">
+            <ul class="p-5">
+              <li
+                v-for="(location, index) in locations"
+                :key="index"
+                class="mb-1"
+              >
+                <a
+                  @click="setLocationFilter(location)"
+                  class="cursor-pointer"
+                  >{{ location.name }}</a
+                >
+              </li>
+            </ul>
+          </div>
         </li>
       </ul>
     </div>
   </div>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      nav: "",
+    };
+  },
+  methods: {
+    setArtistFilter(artist) {
+      this.$store.commit("setArtistsFilter", artist);
+    },
+    setLocationFilter(location) {
+      return location;
+    },
+    toggleNav(navTo) {
+      if (this.nav == navTo) {
+        this.nav = "";
+      } else {
+        this.nav = navTo;
+      }
+    },
+    viewAll() {},
+  },
+  computed: {
+    artists() {
+      return this.$store.state.artists;
+    },
+    artistsFilter() {
+      return this.$store.state.artistsFilter;
+    },
+    locations() {
+      return this.$store.state.locations;
+    },
+  },
+};
+</script>
