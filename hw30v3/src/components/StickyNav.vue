@@ -81,6 +81,9 @@
               >
                 <a
                   @click="setLocationFilter(location)"
+                  :class="{
+                    'font-bold': locationsFilter.includes(location.slug),
+                  }"
                   class="cursor-pointer"
                   >{{ location.name }}</a
                 >
@@ -104,7 +107,7 @@ export default {
       this.$store.commit("setArtistsFilter", artist);
     },
     setLocationFilter(location) {
-      return location;
+      this.$store.commit("setLocationsFilter", location);
     },
     toggleNav(navTo) {
       if (this.nav == navTo) {
@@ -124,6 +127,9 @@ export default {
     },
     locations() {
       return this.$store.state.locations;
+    },
+    locationsFilter() {
+      return this.$store.state.locationsFilter;
     },
   },
 };

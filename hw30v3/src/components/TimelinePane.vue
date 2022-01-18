@@ -29,7 +29,7 @@
             <Discover
               v-if="data.entries.length > showCountFunc(index)"
               @click="showCount[index] = data.entries.length"
-              >{{ data.entries.length }}</Discover
+              >{{ data.entries.length - showCountFunc(index) }}</Discover
             >
           </template>
         </div>

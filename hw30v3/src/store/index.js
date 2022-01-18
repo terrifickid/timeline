@@ -19,6 +19,13 @@ export default createStore({
           if (!state.artistsFilter.includes(entry.artists[0].slug))
             return false;
         }
+
+        //Locations Filter
+        if (state.locationsFilter.length) {
+          if (!state.locationsFilter.includes(entry.locations[0].slug))
+            return false;
+        }
+
         return true;
       });
       var t = {};
@@ -76,8 +83,15 @@ export default createStore({
     setLocations(state, locations) {
       state.locations = locations;
     },
-    setLocationsFilter(state, locationsFilter) {
-      state.locationsFilter = locationsFilter;
+    setLocationsFilter(state, location) {
+      if (state.locationsFilter.includes(location.slug)) {
+        var index = state.locationsFilter.indexOf(location.slug);
+        if (index !== -1) {
+          state.locationsFilter.splice(index, 1);
+        }
+      } else {
+        state.locationsFilter.push(location.slug);
+      }
     },
   },
   actions: {

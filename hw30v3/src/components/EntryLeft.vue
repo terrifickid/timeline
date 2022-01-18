@@ -1,7 +1,7 @@
 <template>
   <div class="grid grid-cols-9 text-white mb-10 lg:mb-20">
     <div class="col-span-4 text-right">
-      <h3 class="text-sm mb-1">Category Name</h3>
+      <h3 class="text-sm mb-1">{{ entry.locations[0].name }}</h3>
       <p class="font-medium text-xl lg:text-3xl" v-html="entry.title"></p>
     </div>
     <div class="col-span-1 flex justify-center">
