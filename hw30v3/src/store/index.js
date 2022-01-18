@@ -28,14 +28,15 @@ export default createStore({
 
         return true;
       });
+
+      //Categorize Timestream by Year
       var t = {};
       time.forEach((element) => {
-        //Categorize Timestream by Year
         if (!t[element.date[2]])
           t[element.date[2]] = { showCount: 2, entries: [] };
         t[element.date[2]].entries.push(element);
       });
-      console.log(t);
+
       return t;
     },
     isModalActive: (state) => {
