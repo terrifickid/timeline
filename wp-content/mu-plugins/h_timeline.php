@@ -8,6 +8,7 @@
  */
 require_once(__DIR__ . '/stream/stream.php');
 require_once(__DIR__ . '/advanced-custom-fields-pro/acf.php');
+require_once(__DIR__ . '/h_inc/h_acf_fields.php');
 
 add_filter('acf/settings/show_admin', '__return_false');
 if($_SERVER['REQUEST_URI'] == '/wp-admin/edit.php?post_type=acf-field-group') die();
